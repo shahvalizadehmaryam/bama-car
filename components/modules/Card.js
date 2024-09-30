@@ -14,12 +14,17 @@ const Card = (props) => {
   } = props;
   return (
     <div className={styles.container}>
-      <img src={image} alt={name} />
+      <img src={image} alt={name} className={styles.image} />
       <h4 className={styles.title}>
         `${name} ${model}`
       </h4>
-      {/* <p></p> */}
-      <div className={styles.footer}>footer</div>
+      <p className={styles.detail}>`${year} . ${distance}`</p>
+      <div className={styles.footer}>
+        <p>${price}</p>
+        <div>
+            {location}
+        </div>
+      </div>
     </div>
   );
 };
