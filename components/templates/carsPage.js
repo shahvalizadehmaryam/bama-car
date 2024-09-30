@@ -4,7 +4,7 @@ const CarsPage = ({ data }) => {
   return (
     <div>
       {data.map((car) => (
-        <Card key={car.id} car={car} />
+        <Card key={car.id} {...car} />
       ))}
     </div>
   );
