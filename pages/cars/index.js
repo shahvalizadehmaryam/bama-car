@@ -1,4 +1,4 @@
-import carsData from "../../components/data/carsData";
+import carsData from "../../data/carsData";
 import CarsPage from "../../components/templates/carsPage";
 
 const Details = () => {
