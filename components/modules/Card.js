@@ -1,9 +1,11 @@
 import styles from "./Card.module.css";
 import Location from "../icons/Location";
+import Link from "next/link";
 const Card = (props) => {
-  const { name, model, year, distance, location, price, image } = props;
+  const { id,name, model, year, distance, location, price, image } = props;
   return (
-    <div className={styles.container}>
+    <Link href={`/cars/${id}`}>
+        <div className={styles.container}>
       <img src={image} alt={name} className={styles.image} />
       <h4 className={styles.title}>
         {name} {model}
@@ -19,7 +21,8 @@ const Card = (props) => {
           <Location />
         </div>
       </div>
-    </div>
+    </div></Link>
+
   );
 };
 
