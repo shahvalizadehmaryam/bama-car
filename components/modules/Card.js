@@ -12,7 +12,7 @@ const Card = (props) => {
         {year} . {distance}km
       </p>
       <div className={styles.footer}>
-        <p>{price}</p>
+        <p>${price}</p>
         <div className={styles.location}>
           <p>{location}</p>
 

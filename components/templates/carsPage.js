@@ -1,13 +1,14 @@
 import Card from "../modules/Card";
+import styles from "./carsPage.module.css";
 
 const CarsPage = ({ data }) => {
-  return (
-    <div>
-      {data.map((car) => (
-        <Card key={car.id} {...car} />
-      ))}
-    </div>
-  );
+return (
+<div className={styles.container}>
+    {data.map((car) => (
+    <Card key={car.id} {...car} />
+    ))}
+</div>
+);
 };
 
 export default CarsPage;
